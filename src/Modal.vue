@@ -1,5 +1,4 @@
 <template>
-
   <div v-if="modalstatus == true" class="black_bg">
     <div class="white_bg">
       <h4>{{oneroom[누른거].title}}</h4>
@@ -7,7 +6,6 @@
 
       <input v-model.number="month" maxlength="3">
 <!--      <input @input="month = $event.target.value">-->
-
       <p>{{ oneroom[누른거].content}} </p>
       <p>{{ month }}개월 선택함 :{{ comma(oneroom[누른거].price * month) }} 원</p>
       <button @click="$emit('closeModal',)" class="modalbtn">
@@ -15,7 +13,6 @@
       </button>
     </div>
   </div>
-
 </template>
 
 <script>
